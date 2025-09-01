@@ -283,3 +283,75 @@ img:hover{
         opacity: 1;
     }
 }
+
+/* Responsive nav adjustment for small screens */
+@media (max-width: 1024px) {
+    nav {
+        position: static;
+        left: auto;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .head {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    header {
+        font-size: 1.5rem;
+        margin-left: 0;
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    a {
+        margin: 10px 15px;
+    }
+
+    .start, .start2, .start3 {
+        padding: 20px 20px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .wm, .first, .second, .third, .four, .five, .six {
+        width: 90vw !important;
+        height: auto !important;
+        left: 0 !important;
+        margin: 1rem auto;
+    }
+
+    #fl, .fl, .second ul li, .third ol li, .four ol li {
+        left: 0 !important;
+        position: static !important;
+        padding-left: 10px;
+    }
+
+    .start, .start2, .start3 {
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+
+    header {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1rem;
+    }
+
+    a {
+        margin: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .head {
+        padding: 5px;
+    }
+}
